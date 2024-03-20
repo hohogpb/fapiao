@@ -1,0 +1,83 @@
+{
+  "name": "fapiao",
+  "author": "bh",
+  "version": "1.0.1",
+  "license": "MIT",    
+  "main": "dist/index.js",
+  "module": "dist/fapiao.esm.js",
+  "typings": "dist/index.d.ts",  
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [    
+    "fapiao",
+    "发票",
+    "table",
+    "editable",    
+    "react"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "scroll-into-view-if-needed": ">=3.1.0",
+    "decimal.js": ">=10.4.3",
+    "dxrmb": ">=0.0.3",
+    "kbjtable": ">=0.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "size-limit": [
+    {
+      "path": "dist/fapiao.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/fapiao.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^11.1.1",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "decimal.js": "^10.4.3",
+    "dxrmb": "^0.0.3",
+    "husky": "^9.0.11",
+    "kbjtable": "^0.0.2",
+    "less": "^4.2.0",
+    "postcss": "^8.4.37",
+    "postcss-modules": "^6.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.72.0",
+    "scroll-into-view-if-needed": "^3.1.0",
+    "size-limit": "^11.1.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hohogpb/fapiao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hohogpb/fapiao/issues"
+  },
+  "homepage": "https://github.com/hohogpb/fapiao#readme"
+}

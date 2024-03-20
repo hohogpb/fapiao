@@ -1,0 +1,30 @@
+.wrap {
+}
+
+.wrap select {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px 5px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 12px;
+  transition: all 0.2s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  outline: none;
+  text-overflow: ellipsis;
+}
+
+.wrap select:focus {
+  border-color: rgb(27, 110, 243);
+  box-shadow: 0 0 0 2px rgba(27, 110, 243, 0.12);
+  outline: 0;
+  background-color: #ffffff;
+}
+
+.wrap input::placeholder {
+}
